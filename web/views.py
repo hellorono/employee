@@ -53,8 +53,7 @@ class IndexView(CreateView,ListView):
     def form_valid(self, form):
         form.instance.user=self.request.user
         return super().form_valid(form)
-    def get_queryset(self):
-        return Employee.objects.exclude(user=self.request.user)
+  
     
 
 
