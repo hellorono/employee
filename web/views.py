@@ -45,7 +45,10 @@ class IndexView(CreateView,ListView):
     form_class=EmployeeForm
     success_url=reverse_lazy("index")
     model=Employee
+    object_list=Employee.objects.all()
+    queryset=Employee.objects.all()
     context_object_name="employee"
+
 
     def form_valid(self, form):
         form.instance.user=self.request.user

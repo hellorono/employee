@@ -14,7 +14,7 @@
     <a class="navbar-brand ml-auto"  href="{%url 'sign-out'%}">Logout</a>
 
   </nav>
-    <h1>welcome</h1>
+    <h1>ADD EMPLOYEE</h1>
      <!-- <a href="">Add Employee</a>
      <a href="">List Employee</a> -->
 
@@ -50,9 +50,8 @@
 
                 </ul>
                 <div class="card-body">
-                  
-                  <a href="{%url 'update' e.id%}" class="card-link">Update</a>
-                  <a href="{%url 'employee_delete' e.id%}" class="card-link">Delete</a>
+                  <a href="{%url 'update' e.id%}"><button type="submit" class="btn btn-dark">update</button></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="{%url 'employee_delete' e.id%}"><button type="submit" class="btn btn-dark">delete</button></a>
                 </div>
               </div>
               {%endfor%}
